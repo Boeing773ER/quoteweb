@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="description" content="英剧台词搜索与引用图片生成 —— Yes Minister / Yes, Prime Minister" />
+<meta name="theme-color" content="#0d1b2a" />
+<title>台词引用 · QuoteWeb</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#app">跳到主要内容</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#/" aria-label="返回首页">
+      <span class="brand-mark" aria-hidden="true">“</span>
+      <span class="brand-text">
+        <strong>QuoteWeb</strong>
+        <small>英剧台词引用生成器</small>
+      </span>
+    </a>
+    <nav class="header-nav">
+      <a href="#/">首页</a>
+      <a href="#/about">关于</a>
+    </nav>
+  </div>
+</header>
+
+<main id="app" class="wrap" tabindex="-1"></main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>台词文本整理自 <a href="https://en.wikiquote.org/wiki/Yes,_Minister" target="_blank" rel="noopener noreferrer">Wikiquote</a>（CC BY-SA）。
+       剧集版权归 BBC 及原作者所有，本站仅用于学习与个人引用。</p>
+  </div>
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<div id="modal" class="modal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-head">
+      <h2 id="modal-title">引用预览</h2>
+      <button class="icon-btn" type="button" data-close aria-label="关闭">×</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+    <div class="modal-foot" id="modal-foot"></div>
+  </div>
+</div>
+
+<script src="data/manifest.js"></script>
+<script src="data/library.js"></script>
+<script src="js/util.js"></script>
+<script src="js/search.js"></script>
+<script src="js/quote.js"></script>
+<script src="js/store.js"></script>
+<script src="js/views.js"></script>
+<script src="js/router.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
